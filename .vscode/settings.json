@@ -1,0 +1,40 @@
+{
+	"files.exclude": {
+		"**/.git": true,
+		"**/.svn": true,
+		"**/.hg": true,
+		"**/CVS": true,
+		"**/.DS_Store": true,
+		"**/Thumbs.db": true,
+		"node_modules": true,
+		"build/**/*.js": {
+			"when": "$(basename).ts"
+		},
+		"dist": true,
+		"bin": true,
+		"package-lock.json": true,
+		".gitignore": false,
+		"yarn.lock": true,
+		"yarn-error.log": true
+	},
+	"eslint.options": {
+		"rulePaths": [
+			"./build/lib/eslint"
+		]
+	},
+	"editor.showUnused": true,
+	"typescript.preferences.importModuleSpecifier": "non-relative",
+	"typescript.preferences.quoteStyle": "single",
+	"files.insertFinalNewline": true,
+	"[typescript]": {
+		"editor.defaultFormatter": "vscode.typescript-language-features",
+		"editor.formatOnSave": true,
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "vscode.typescript-language-features",
+		"editor.formatOnSave": true,
+	},
+	"typescript.tsc.autoDetect": "off",
+	"javascript.format.semicolons":"insert",
+	"typescript.format.semicolons":"insert"
+}
